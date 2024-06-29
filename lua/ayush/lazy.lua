@@ -18,4 +18,7 @@ require("lazy").setup({ { import = "ayush.plugins" }, { import = "ayush.plugins.
     enabled = true,
     notify = false,
   },
+  change_detection = {
+    notify = false,
+  }
 })

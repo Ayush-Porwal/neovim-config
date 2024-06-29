@@ -10,6 +10,7 @@ return {
 
     -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
+    local mason_tool_installer = require("mason_tool_installer")
 
     -- enable mason and configure icons
     mason.setup({
@@ -39,7 +40,7 @@ return {
     })
 
     mason_tool_installer.setup({
-    ensure_installed = {
+      ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
         "isort", -- python formatter
